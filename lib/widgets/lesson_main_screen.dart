@@ -259,9 +259,14 @@ class _LockSession extends StatelessWidget {
           Container(
               height: 48,
               width: 48,
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                   color: gray800BckgrndColor,
-                  borderRadius: BorderRadius.all(Radius.circular(10))),
+                  border: Border.all(
+                    color: tabSessionBorderColor,
+                    width: 1,
+                    style: BorderStyle.solid,
+                  ),
+                  borderRadius: const BorderRadius.all(Radius.circular(10))),
               child: const Image(
                 image: AssetImage(lockImage),
               )),
